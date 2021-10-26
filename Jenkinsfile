@@ -13,7 +13,7 @@ pipeline {
         stage('this runs in a pod') {
           steps {
             container('alpine') {
-              sh 'uptime'
+              sh 'docker --version'
             }
           }
         }
